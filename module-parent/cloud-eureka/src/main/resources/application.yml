@@ -1,0 +1,13 @@
+server:
+  port: 9300
+spring:
+  application:
+    name: cloud-eureka
+eureka:
+  instance:
+    hostname: localhostEurekaA
+  client:
+    service-url:
+      defaultZone: http://localhostEurekaB:9301/eureka/
+    register-with-eureka: false
+    fetch-registry: false
